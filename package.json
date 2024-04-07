@@ -1,18 +1,38 @@
 {
     "name": "types-tools",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A TypeScript Type Tools",
     "author": "天平 <1229248506@qq.com>",
+    "type": "module",
+    "scripts": {
+        "prepare": "husky",
+        "eslint": "eslint"
+    },
     "publishConfig": {
         "access": "public"
     },
     "license": "MIT",
     "homepage": "https://github.com/Minori-ty/types-tools",
-    "type": "module",
+    "files": [
+        "dist",
+        "README.md"
+    ],
     "types": "src/index.d.ts",
     "keywords": [
         "typescript",
         "type",
         "types"
-    ]
+    ],
+    "devDependencies": {
+        "eslint": "^9.0.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "prettier": "^3.2.5"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    }
 }

@@ -30,14 +30,14 @@ jobs:
                   echo "version is ${{ steps.check.outputs.version }}"
                   echo "------------------------------"
 
-            # - name: Build & publish
-            #   # if: steps.check.outputs.changed == 'true'
-            #   uses: actions/setup-node@v3
-            #   with:
-            #       node-version: '20'
+            - name: Build & publish
+              # if: steps.check.outputs.changed == 'true'
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '20'
 
-            # - name: Install dependencies
-            #   run: npm install
+            - name: Install dependencies
+              run: npm install
 
             # - name: Build
             #   run: npm run build
