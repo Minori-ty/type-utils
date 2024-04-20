@@ -43,7 +43,7 @@ jobs:
             #   run: npm run build
 
             - name: push
-              if: steps.check.outputs.changed == 'true'
+              # if: steps.check.outputs.changed == 'true'
               uses: JS-DevTools/npm-publish@v3
               with:
                   token: ${{ secrets.NPM_TOKEN }}
