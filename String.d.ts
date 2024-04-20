@@ -1,3 +1,5 @@
 export type { IsIntegerString } from './src/String/IsIntegerString'
 export type { IsImageUrl } from './src/String/IsImageUrl'
 export type { IsUrl } from './src/String/IsUrl'
+export type { Url } from './src/String/Url'
+export type { ImageUrl } from './src/String/ImageUrl'

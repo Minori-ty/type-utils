@@ -1,3 +1,5 @@
+import type { Url } from './Url'
+
 /**
  * 判断字符串是不是以`https://`或者`http://`开头的url
  * @example
@@ -7,4 +9,4 @@
  * type Test3 = IsUrl<'ftp://example.com'>;   // 结果为 false
  * ```
  */
-export type IsUrl<T extends string> = T extends `http://${infer Rest}` | `https://${infer Rest}` ? true : false
+export type IsUrl<T extends string> = T extends Url ? true : false

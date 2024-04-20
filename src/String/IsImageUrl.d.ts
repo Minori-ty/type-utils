@@ -1,4 +1,4 @@
-import type { IsUrl } from './IsUrl'
+import type { ImageUrl } from './ImageUrl'
 
 /**
  * 判断字符串是不是图片链接
@@ -11,13 +11,4 @@ import type { IsUrl } from './IsUrl'
  * type Test5 = IsImageUrl<'ftp://example.com/image.png'> // false
  * ```
  */
-type EndsWithImageExtension<T extends string> = T extends
-    | `${infer Rest}.png`
-    | `${infer Rest}.jpg`
-    | `${infer Rest}.webp`
-    ? true
-    : false
-type IsImageUrl<T extends string> =
-    T extends `${IsUrl<T> extends true ? `http${string}` : never}${EndsWithImageExtension<T> extends true ? `${string}.${'png' | 'jpg' | 'webp'}` : never}`
-        ? true
-        : false
+type IsImageUrl<T extends string> = T extends ImageUrl ? true : false
