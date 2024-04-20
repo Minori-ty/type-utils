@@ -12,7 +12,11 @@
         "access": "public"
     },
     "license": "MIT",
-    "homepage": "https://github.com/Minori-ty/types-tools",
+    "homepage": "https://www.npmjs.com/package/types-tools",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Minori-ty/types-tools"
+    },
     "types": "src/index.d.ts",
     "keywords": [
         "typescript",
@@ -20,7 +24,7 @@
         "types"
     ],
     "devDependencies": {
-        "eslint": "^9.0.0",
+        "eslint": "^9.1.0",
         "husky": "^9.0.11",
         "lint-staged": "^15.2.2",
         "prettier": "^3.2.5"
