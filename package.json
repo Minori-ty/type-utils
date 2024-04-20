@@ -1,6 +1,6 @@
 {
     "name": "types-tools",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A TypeScript Type Tools",
     "author": "天平 <1229248506@qq.com>",
     "type": "module",
